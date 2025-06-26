@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement test</title>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      
+  </script>
+     <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+        window.onunload = function () { null }; 
+    </script> 
+</head>
+<body>
+
+    
+   
+    
+    
+    
+    
+<div align=center><h1>Mathematics Placement Test</h1>
+    <h2>Part 2</h2>
+    <h3><div id="time"></div></div></h3><br><br>
+
+<script>
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("&");
+points1=queries[0];
+parameter=queries[1];
+if(parseInt(parameter)!==parseInt(localStorage.getItem("passon")))
+{window.history.back();}    
+if(parseInt(parameter)==parseInt(localStorage.getItem("passon")))
+{parameter1=Math.floor(Math.random() * 100) + 1;
+localStorage.setItem("passon", parameter1.toString());}
+</script>        
+
+    
+<script>
+ 
+
+    
+    
+    var timeleft = 30*60;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("time").innerHTML = "Finished";
+      fertig();
+  } else {
+    document.getElementById("time").innerHTML = "This part of the test finishes in " + Math.floor(timeleft/60) + " minutes and " + (timeleft-Math.floor(timeleft/60)*60) + " seconds.";
+  }
+  timeleft -= 1;
+}, 1000);
+</script>
+
+    
+    
+<div id = "q1">  
+    
+    <b><div id = "qn1"></div> </b> <br>
+    If \(x=-2\), then \(x^2-5x-7 =\)  <br><br> 
+        <input type="radio" name="q1" value=""> -1 </input><br><br>
+        <input type="radio" name="q1" value=""> 3 </input><br><br>
+        <input type="radio" name="q1" value=""> 7 </input><br><br>
+        <input type="radio" name="q1" value=""> 13 </input><br><br>
+        <input type="radio" name="q1" value=""> 21 </input>
+<br><br><br>
+</div>
+<div id = "q2"> 
+   
+    <b> <div id = "qn2"></div></b> <br>
+    Simplify: \(2-2x-5+4x\). <br><br> 
+        <input type="radio" name="q2" value=""> \(-2x+7\) </input><br><br>
+        <input type="radio" name="q2" value=""> \(8x^2-10\) </input><br><br>
+        <input type="radio" name="q2" value=""> \(-8x+2\) </input><br><br>
+        <input type="radio" name="q2" value=""> \(2x-3\) </input><br><br>
+        <input type="radio" name="q2" value=""> \(8x+7\) </input>
+<br><br><br>
+</div>
+<div id = "q3"> 
+   
+<b> <div id = "qn3"></div></b> <br>
+    Simplify: \(3m+7-2(m+3)\). <br><br> 
+        <input type="radio" name="q3" value=""> \(2m-4\) </input><br><br>
+        <input type="radio" name="q3" value=""> \(m+1\) </input><br><br>
+        <input type="radio" name="q3" value=""> \(m+4\) </input><br><br>
+        <input type="radio" name="q3" value=""> \(10m-6\) </input><br><br>
+        <input type="radio" name="q3" value=""> \(10m-2\) </input>
+<br><br><br>
+</div>
+<div id = "q4"> 
+    
+<b><div id = "qn4"></div></b> <br>
+    Solve for \(x\) in the following equation: \(x-2=-6\). <br><br> 
+        <input type="radio" name="q4" value=""> \(-8\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(-4\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(\frac{1}{3}\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(3\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(8\) </input>
+<br><br><br>
+</div>
+<div id = "q5"> 
+    
+<b><div id = "qn5"></div></b> <br>
+    Solve for \(x\) in the following equation: \(-8x=2\). <br><br> 
+        <input type="radio" name="q5" value=""> \(-6\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(-4\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(-\frac{1}{4}\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(10\) </input><br><br>
+        <input type="radio" name="q5" value=""> No solution </input>
+<br><br><br>
+</div>
+<div id = "q6"> 
+    
+<b><div id = "qn6"></div></b> <br>
+    Solve for \(x\) in the following equation: \(5x+7-2x+3=15\). <br><br> 
+        <input type="radio" name="q6" value=""> \(-\frac{15}{4}\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(-\frac{3}{4}\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(\frac{3}{15}\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(\frac{5}{7}\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(\frac{5}{3}\) </input>
+<br><br><br>
+</div>
+<div id = "q7"> 
+   
+<b> <div id = "qn7"></div></b> <br>
+    Graph the equation \(x+y=2\). <br><br> 
+    <input type="radio" name="q7" value="">  </input> <br><img src="p2q7_1.jpg"></img><br>
+        <input type="radio" name="q7" value="">  </input><br><img src="p2q7_2.jpg"></img><br>
+        <input type="radio" name="q7" value="">  </input><br><img src="p2q7_3.jpg"></img><br>
+        <input type="radio" name="q7" value="">  </input><br><img src="p2q7_4.jpg"></img><br>
+        <input type="radio" name="q7" value="">  </input><br><img src="p2q7_5.jpg"></img>
+<br><br><br>
+</div>
+<div id = "q8"> 
+   
+<b> <div id = "qn8"></div></b> <br>
+    Solve for \(x\) in the following formula: \(ax=bc\). <br><br> 
+        <input type="radio" name="q8" value=""> \(\frac{bc}{a}\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(bc-a\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(a-bc\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(\frac{a}{bc}\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(bc+a\) </input>
+<br><br><br>
+</div>
+<div id = "q9"> 
+    
+<b><div id = "qn9"></div></b> <br>
+    Write an algebraic expression for "the number increased by 10". <br><br> 
+        <input type="radio" name="q9" value=""> \((x+10)+(x+10)\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(x+10x\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(x+10\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(x+(x+10)\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(10x+10\) </input>
+<br><br><br>
+</div>
+<div id = "q10"> 
+    
+<b><div id = "qn10"></div></b> <br>
+    One side of a rectangle is \(7\) yards long. Find the length of the other side if the 
+    perimeter is 18 yards.<br><br> 
+        <input type="radio" name="q10" value=""> \(\frac{9}{7}\) yards </input><br><br>
+        <input type="radio" name="q10" value=""> \(2\) yards</input><br><br>
+        <input type="radio" name="q10" value=""> \(5.5\) yards</input><br><br>
+        <input type="radio" name="q10" value=""> \(11\) yards</input><br><br>
+        <input type="radio" name="q10" value=""> \(25\) yards</input>
+<br><br><br>
+</div>
+<div id = "q11"> 
+     
+<b><div id = "qn11"></div></b> <br> 
+    Solve the inequality: \(5-2x &le; 11\). <br><br> 
+        <input type="radio" name="q11" value=""> \(x &le; 3\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(x=-9\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(x &ge; -8\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(x &le; 8\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(x &ge; -3\) </input>
+<br><br><br>
+</div>
+<div id = "q12"> 
+     
+<b><div id = "qn12"></div></b> <br>
+    Solve for \(x\): \(\left\{\begin{array}{c}3x-y &=& 11 \\ x+y &=& 3 \end{array} \right.\).
+    <br><br> 
+        <input type="radio" name="q12" value=""> \(-2\) </input><br><br>
+        <input type="radio" name="q12" value=""> \(2\)</input><br><br>
+        <input type="radio" name="q12" value=""> \(\frac{3}{4}\) </input><br><br>
+        <input type="radio" name="q12" value=""> \(\frac{7}{2}\)  </input><br><br>
+        <input type="radio" name="q12" value=""> \(4\)  </input>
+<br><br><br>
+</div>
+<div id = "q13"> 
+    
+<b> <div id = "qn13"></div></b> <br>
+    Multiply: \((z-3)(z+2)\).<br><br> 
+        <input type="radio" name="q13" value=""> \(z^2-6\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(z^2+6\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(z^2-z-6\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(z^2+z-6\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(6z-1\) </input>
+<br><br><br>
+</div>
+<div id = "q14"> 
+     
+<b><div id = "qn14"></div></b> <br>
+    Factor: \(3x^2-10x\).<br><br> 
+        <input type="radio" name="q14" value=""> \(-7\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(-7x\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(x(3x-10)\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(-7x^2\) </input><br><br>
+        <input type="radio" name="q14" value=""> Cannot be factored </input>
+<br><br><br>
+</div>
+<div id = "q15"> 
+     
+<b><div id = "qn15"></div></b> <br>
+    Simplify: \(\left(3x^3\right)^2\).<br><br> 
+        <input type="radio" name="q15" value=""> \(3x\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(9x^3\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(3x^5\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(9x^6\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(x^{18}\) </input>
+<br><br><br>
+</div>
+<div id = "q16"> 
+<b><div id = "qn16"></div></b> <br>
+    Simplify: \(x^2 \cdot x^{-4}\).<br><br> 
+        <input type="radio" name="q16" value=""> \(-x^2\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(-x^6\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(x^{-6}\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(\frac{1}{x^2}\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(\frac{1}{x^6}\) </input>
+<br><br><br>
+</div>
+<div id = "q17"> 
+<b><div id = "qn17"></div></b> <br>
+    Which of the following is the factorization of \(x^2-9\)?<br><br> 
+        <input type="radio" name="q17" value=""> \((x+3)(x-3)\) </input><br><br>
+        <input type="radio" name="q17" value=""> \((x-3)^2\) </input><br><br>
+        <input type="radio" name="q17" value=""> \(x(x-9)\) </input><br><br>
+        <input type="radio" name="q17" value=""> \((x-9)(x+9)\) </input><br><br>
+        <input type="radio" name="q17" value=""> \((x-9)(x+1)\) </input>
+<br><br><br>
+</div>
+<div id = "q18"> 
+     
+<b><div id = "qn18"></div> </b> <br>
+    Simplify: \(\frac{2x^3y}{xy^2} \).<br><br> 
+        <input type="radio" name="q18" value=""> \(8x^2y^2\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(\frac{8x^4}{y}\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(\frac{2x^4}{y}\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(\frac{2x^2}{y}\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(\frac{8x^4}{y^3}\) </input>
+<br><br><br>
+</div>
+<div id = "q19"> 
+     
+<b><div id = "qn19"></div> </b> <br>
+    Solve the equation \(A=Bt+C\) for \(t\).<br><br> 
+        <input type="radio" name="q19" value=""> \(\frac{A-C}{B}\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(\frac{A+C}{B}\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(\frac{A}{B}\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(\frac{AC}{B}\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(\frac{A}{BC}\) </input>
+<br><br><br>
+</div>
+<div id = "q20"> 
+  
+<b><div id = "qn20"></div>  </b> <br>
+    Solve for \(x\) in the following equation: \(x^2-5x+6=0\).<br><br> 
+        <input type="radio" name="q20" value=""> \(\{-5,6\}\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(\{5,-6\}\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(\{-3,2\}\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(\{-2,3\}\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(\{2,3\}\) </input>
+<br><br><br>
+</div>
+    <button id = "submit" type="button" onclick="fertig()"><h1>CLICK HERE TO SUBMIT YOUR ANSWERS</h1></button> <br><br>
+   <div id="result"></div> 
+
+
+<script>
+    var i = 0,j = 0;
+    var pswap = 0;
+    var problems = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    
+    
+    
+    for (i = 19; i >= 0 ; i--) {
+    j = Math.floor((Math.random()*i)+0.5);
+    pswap = problems[i];
+    problems[i] = problems[j];
+    problems[j] = pswap;
+    }
+    //document.getElementById("result").innerHTML = problems;
+    
+    
+    
+    for (i = 13; i <= 20; i++) {
+    document.getElementById("q"+problems[i-1].toString()).style.display = "none";
+    }
+    
+    j = 1;
+    
+    for (i = 1; i <= 20; i++) { 
+    if (document.getElementById("q"+i.toString()).style.display !== "none") 
+    {document.getElementById("qn"+i.toString()).innerHTML = "Question " + j + "."; j=j+1}
+    
+        
+       
+    }
+    
+
+ 
+        
+</script>    
+
+
+<script> 
+
+function fertig() { 
+    window.scrollTo(0,document.body.scrollHeight);
+        var points2=0;
+        var ergebnis = [2,3,2,1,2,4,0,0,2,1,4,3,2,2,3,3,0,3,0,4];
+for (i = 1; i <= 20; i++) {     
+if (document.getElementsByName("q"+i)[ergebnis[i-1]].checked == 1 && document.getElementById("q"+i.toString()).style.display !== "none")
+{points2 = points2 + 1;}  
+}
+document.getElementById("submit").disabled = true;    
+//document.getElementById("result").innerHTML = "Your placement test ends here. You scored " + eval(parseInt(points1) + //parseInt(points2)) + " point(s).";    
+    
+               
+if(points2 >= 9)
+                    {points2=9;plevel=3;
+                    var queryString = "?" + eval(parseInt(points1) + parseInt(points2))+ "&" + parameter1;
+                    window.location.href="test_place3.html"+queryString;}
+    
+if(points2 < 9)
+                    {plevel=2;
+                    var queryString = "?" + eval(parseInt(points1) + parseInt(points2))+ "&" + plevel + "&" + parameter1;
+                    window.location.href="test_place_end.html"+queryString;}
+          
+        }
+</script>
+</body>
+</html>

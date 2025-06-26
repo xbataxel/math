@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement test</title>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      
+  </script>
+     <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+        window.onunload = function () { null }; 
+    </script> 
+</head>
+    
+<body>
+
+<script>
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("&");
+parameter=queries[0];
+if(parseInt(parameter)!==parseInt(localStorage.getItem("passon")))
+    {window.history.back();}    
+if(parseInt(parameter)==parseInt(localStorage.getItem("passon")))
+{parameter1=Math.floor(Math.random() * 100) + 1;
+localStorage.setItem("passon", parameter1.toString());}
+
+</script>
+
+
+    
+<script>
+document.onkeydown = function (e) {
+        return false;
+}
+</script>
+   
+
+    
+    
+<div align=center><h1>Mathematics Placement Test</h1>
+    <h2>Part 1</h2>
+    <h3><div id="time"></div></div></h3><br><br>
+    
+    
+<script>
+    
+    var timeleft = 30*60;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("time").innerHTML = "Finished";
+      fertig();
+  } else {
+    document.getElementById("time").innerHTML = "This part of the test finishes in " + Math.floor(timeleft/60) + " minutes and " + (timeleft-Math.floor(timeleft/60)*60) + " seconds.";
+  }
+  timeleft -= 1;
+}, 1000);
+</script>
+
+    
+    
+<div id = "q1">  
+    
+    <b><div id = "qn1"></div> </b> <br>
+    Add the following numbers: \(8,-13,17,-39\). <br><br> 
+        <input type="radio" name="q1" value=""> -7 </input><br><br>
+        <input type="radio" name="q1" value=""> -8 </input><br><br>
+        <input type="radio" name="q1" value=""> -18 </input><br><br>
+        <input type="radio" name="q1" value=""> -27 </input><br><br>
+        <input type="radio" name="q1" value=""> -44 </input>
+<br><br><br>
+</div>
+<div id = "q2"> 
+   
+    <b> <div id = "qn2"></div></b> <br>
+    Evaluate: \(0.8+0.66\). <br><br> 
+        <input type="radio" name="q2" value=""> 1.46 </input><br><br>
+        <input type="radio" name="q2" value=""> 0.46 </input><br><br>
+        <input type="radio" name="q2" value=""> 0.74 </input><br><br>
+        <input type="radio" name="q2" value=""> 0.146 </input><br><br>
+        <input type="radio" name="q2" value=""> 0.074 </input>
+<br><br><br>
+</div>
+<div id = "q3"> 
+   
+<b> <div id = "qn3"></div></b> <br>
+    Multiply: \(5.7 \times 0.2\). <br><br> 
+        <input type="radio" name="q3" value=""> 1.14 </input><br><br>
+        <input type="radio" name="q3" value=""> 11.4 </input><br><br>
+        <input type="radio" name="q3" value=""> 1.4 </input><br><br>
+        <input type="radio" name="q3" value=""> 0.114 </input><br><br>
+        <input type="radio" name="q3" value=""> 5.14 </input>
+<br><br><br>
+</div>
+<div id = "q4"> 
+    
+<b><div id = "qn4"></div></b> <br>
+    Divide: \(\frac{3}{4} \div \frac{1}{2}\). <br><br> 
+        <input type="radio" name="q4" value=""> \(\frac{1}{4}\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(\frac{3}{8}\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(\frac{4}{3}\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(\frac{3}{2}\) </input><br><br>
+        <input type="radio" name="q4" value=""> \(\frac{8}{3}\) </input>
+<br><br><br>
+</div>
+<div id = "q5"> 
+    
+<b><div id = "qn5"></div></b> <br>
+    Multiply: \(\frac{1}{6} \times \frac{2}{5}\). <br><br> 
+        <input type="radio" name="q5" value=""> \(\frac{3}{11}\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(\frac{5}{12}\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(\frac{1}{15}\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(\frac{2}{11}\) </input><br><br>
+        <input type="radio" name="q5" value=""> \(\frac{1}{12}\) </input>
+<br><br><br>
+</div>
+<div id = "q6"> 
+    
+<b><div id = "qn6"></div></b> <br>
+    Multiply: \((12)(-4)(2)\). <br><br> 
+        <input type="radio" name="q6" value=""> \(-96\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(-88\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(-20\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(20\) </input><br><br>
+        <input type="radio" name="q6" value=""> \(86\) </input>
+<br><br><br>
+</div>
+<div id = "q7"> 
+   
+<b> <div id = "qn7"></div></b> <br>
+    Subtract: \(\frac{2}{5} - \frac{1}{3}\). <br><br> 
+        <input type="radio" name="q7" value=""> \(-\frac{1}{8}\) </input><br><br>
+        <input type="radio" name="q7" value=""> \(\frac{1}{15}\) </input><br><br>
+        <input type="radio" name="q7" value=""> \(\frac{1}{8}\) </input><br><br>
+        <input type="radio" name="q7" value=""> \(\frac{2}{15}\) </input><br><br>
+        <input type="radio" name="q7" value=""> \(\frac{1}{2}\) </input>
+<br><br><br>
+</div>
+<div id = "q8"> 
+   
+<b> <div id = "qn8"></div></b> <br>
+    Evaluate: \((-6)(-4+6)\). <br><br> 
+        <input type="radio" name="q8" value=""> \(-16\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(-12\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(-14\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(16\) </input><br><br>
+        <input type="radio" name="q8" value=""> \(18\) </input>
+<br><br><br>
+</div>
+<div id = "q9"> 
+    
+<b><div id = "qn9"></div></b> <br>
+    Evaluate: \(-6-4-6\). <br><br> 
+        <input type="radio" name="q9" value=""> \(-4\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(-8\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(-16\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(-30\) </input><br><br>
+        <input type="radio" name="q9" value=""> \(-144\) </input>
+<br><br><br>
+</div>
+<div id = "q10"> 
+    
+<b><div id = "qn10"></div></b> <br>
+    Evaluate: \(\left(\frac{3}{4}\right)^2\). <br><br> 
+        <input type="radio" name="q10" value=""> \(\frac{9}{16}\) </input><br><br>
+        <input type="radio" name="q10" value=""> \(\frac{6}{8}\) </input><br><br>
+        <input type="radio" name="q10" value=""> \(\frac{6}{4}\) </input><br><br>
+        <input type="radio" name="q10" value=""> \(\frac{9}{4}\) </input><br><br>
+        <input type="radio" name="q10" value=""> \(\frac{3}{2}\) </input>
+<br><br><br>
+</div>
+<div id = "q11"> 
+     
+<b><div id = "qn11"></div></b> <br> 
+    Evaluate: \(5\%\) of \(20\). <br><br> 
+        <input type="radio" name="q11" value=""> \(0.01\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(0.1\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(1\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(10\) </input><br><br>
+        <input type="radio" name="q11" value=""> \(100\) </input>
+<br><br><br>
+</div>
+<div id = "q12"> 
+     
+<b><div id = "qn12"></div></b> <br>
+    A car is traveling at a constant rate and travels \(18\) miles in \(15\) minutes. How far will this car travel in \(45\) minutes?<br><br> 
+        <input type="radio" name="q12" value=""> \(36\) miles </input><br><br>
+        <input type="radio" name="q12" value=""> \(37.5\) miles </input><br><br>
+        <input type="radio" name="q12" value=""> \(48\) miles </input><br><br>
+        <input type="radio" name="q12" value=""> \(54\) miles </input><br><br>
+        <input type="radio" name="q12" value=""> \(72\) miles </input>
+<br><br><br>
+</div>
+<div id = "q13"> 
+    
+<b> <div id = "qn13"></div></b> <br>
+    Evaluate: \(8 - 2 \times 3\).<br><br> 
+        <input type="radio" name="q13" value=""> \(-48\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(-18\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(-2\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(2\) </input><br><br>
+        <input type="radio" name="q13" value=""> \(18\) </input>
+<br><br><br>
+</div>
+<div id = "q14"> 
+     
+<b><div id = "qn14"></div></b> <br>
+    Evaluate: \(\frac{10-6}{(5)(2)}\).<br><br> 
+        <input type="radio" name="q14" value=""> \(-6\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(-1\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(\frac{2}{5}\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(1\) </input><br><br>
+        <input type="radio" name="q14" value=""> \(\frac{8}{5}\) </input>
+<br><br><br>
+</div>
+<div id = "q15"> 
+     
+<b><div id = "qn15"></div></b> <br>
+    Evaluate: \(4-(-9)+1\).<br><br> 
+        <input type="radio" name="q15" value=""> \(-35\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(-4\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(6\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(14\) </input><br><br>
+        <input type="radio" name="q15" value=""> \(37\) </input>
+<br><br><br>
+</div>
+<div id = "q16"> 
+<b><div id = "qn16"></div></b> <br>
+    Evaluate: \(-5 \times 2 - 3\).<br><br> 
+        <input type="radio" name="q16" value=""> \(-13\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(-5\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(5\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(13\) </input><br><br>
+        <input type="radio" name="q16" value=""> \(30\) </input>
+<br><br><br>
+</div>
+<div id = "q17"> 
+<b><div id = "qn17"></div></b> <br>
+    Evaluate: \(4 (3)^2\).<br><br> 
+        <input type="radio" name="q17" value=""> \(12\) </input><br><br>
+        <input type="radio" name="q17" value=""> \(24\) </input><br><br>
+        <input type="radio" name="q17" value=""> \(36\) </input><br><br>
+        <input type="radio" name="q17" value=""> \(48\) </input><br><br>
+        <input type="radio" name="q17" value=""> \(144\) </input>
+<br><br><br>
+</div>
+<div id = "q18"> 
+     
+<b><div id = "qn18"></div> </b> <br>
+    Evaluate: \(5 + (-3)^2 \).<br><br> 
+        <input type="radio" name="q18" value=""> \(-14\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(-4\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(14\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(24\) </input><br><br>
+        <input type="radio" name="q18" value=""> \(45\) </input>
+<br><br><br>
+</div>
+<div id = "q19"> 
+     
+<b><div id = "qn19"></div> </b> <br>
+    Evaluate: \(8-[4-(4-3)]\).<br><br> 
+        <input type="radio" name="q19" value=""> \(5\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(4\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(3\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(-3\) </input><br><br>
+        <input type="radio" name="q19" value=""> \(-24\) </input>
+<br><br><br>
+</div>
+<div id = "q20"> 
+  
+<b><div id = "qn20"></div>  </b> <br>
+    Evaluate: \(8-4 \div 2\).<br><br> 
+        <input type="radio" name="q20" value=""> \(-16\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(-2\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(2\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(6\) </input><br><br>
+        <input type="radio" name="q20" value=""> \(16\) </input>
+<br><br><br>
+</div>
+    <button id = "submit" type="button" onclick="fertig()"><h1>CLICK HERE TO SUBMIT YOUR ANSWERS</h1></button> <br><br>
+   <div id="result"></div> 
+
+
+<script>
+    
+    var i = 0,j = 0;
+    var pswap = 0;
+    var problems = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    
+    
+    
+    for (i = 19; i >= 0 ; i--) {
+    j = Math.floor((Math.random()*i)+0.5);
+    pswap = problems[i];
+    problems[i] = problems[j];
+    problems[j] = pswap;
+    }
+    //document.getElementById("result").innerHTML = problems;
+    
+    
+    
+    for (i = 13; i <= 20; i++) {
+    document.getElementById("q"+problems[i-1].toString()).style.display = "none";
+    }
+    
+    j = 1;
+    
+    for (i = 1; i <= 20; i++) { 
+    if (document.getElementById("q"+i.toString()).style.display !== "none") 
+    {document.getElementById("qn"+i.toString()).innerHTML = "Question " + j + "."; j=j+1}
+    
+    }
+    
+        
+</script>    
+
+
+<script> 
+
+function fertig() { 
+    window.scrollTo(0,document.body.scrollHeight);
+        var points1 = 0;
+        var ergebnis = [3,0,0,3,2,0,1,1,2,0,2,3,3,2,3,0,2,2,0,3];
+for (i = 1; i <= 20; i++) {     
+if (document.getElementsByName("q"+i)[ergebnis[i-1]].checked == 1 && document.getElementById("q"+i.toString()).style.display !== "none")
+{points1 = points1 + 1;}  
+}
+document.getElementById("submit").disabled = true;    
+//document.getElementById("result").innerHTML = "Your placement test ends here. You scored " + points1 + " point(s).";    
+    
+
+    
+    
+if(points1 >= 9)
+                    {points1=9;plevel = 2;
+                    var queryString = "?" + points1 + "&" + parameter1;
+                    window.location.href="test_place2.html"+queryString;}
+if(points1 < 9)
+                    {plevel = 1;
+                    var queryString = "?" + points1 + "&" + plevel + "&" + parameter1;              
+                    window.location.href="test_place_end.html"+queryString;}
+    
+    //{document.getElementById("result").innerHTML = "Your placement test ends here. You scored " + points1 + " /
+    //point(s).";}
+
+
+    
+    
+        }
+</script>
+</body>
+</html>

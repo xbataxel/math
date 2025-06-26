@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement test</title>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      
+  </script>
+    <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+          
+        window.onunload = function () { null }; 
+    </script> 
+</head>
+    
+<body>
+
+
+    
+
+    <script>
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("&");
+parameter=queries[0];
+    </script>
+
+    <script>
+if(parameter=="480108"){
+
+parameter1=Math.floor(Math.random() * 100) + 1;
+localStorage.setItem("passon", parameter1.toString())
+    
+var queryString = "?" + parameter1;
+window.location.href="test_place1.html"+queryString;
+        
+//window.open("https://mathags.sitehost.iu.edu/placement/test_place1.html","_self", 'width=800,height=600',true);
+window.close();}    
+else{window.history.back();}
+        
+</script>
+ 
+</body>
+</html>
+<!----> 

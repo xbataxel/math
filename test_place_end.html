@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement test</title>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>  
+</head>
+    
+<body>
+    
+
+
+    <div align=center><h1><b>You have completed the Mathematics Placement Test.</b></h1><br>
+
+        <h1>Your score is: <font size="+7"><div id = "score"></div> </font></h1> 
+        <h1>Your placement level is: <font size="+7"><div id = "plevel"></div></font> </h1>
+        <h1>Your next Mathematics class to take: <font size="+7"><div id = "class"></div></font></h1>
+    <br> <h1> Please take a screenshot of this page and send it to 
+    <h1 style="color:red;">axgeschu@iun.edu</h1></h1>.
+        <h1><p style="color:red;">Your results have been recorded. It is safe to close this window.</p></h1>
+        
+<script>
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("&");
+points=queries[0];
+plevel=queries[1];
+parameter=queries[2];    
+
+if(parseInt(parameter)==parseInt(localStorage.getItem("passon")))
+{
+parameter1=Math.floor(Math.random() * 100) + 1;
+localStorage.setItem("passon", parameter1.toString());    
+    
+    
+document.getElementById("score").innerHTML = parseInt(points);
+document.getElementById("plevel").innerHTML = "MA10"+parseInt(plevel);
+if(plevel==1){
+    document.getElementById("class").innerHTML = "MATH-M 15";
+  }
+if(plevel==2){
+    document.getElementById("class").innerHTML = "MATH-A 100";
+  }
+if(plevel==3){
+    document.getElementById("class").innerHTML = "MATH-M 100 or MATH-M 111 or MATH-M 117 or MATH-T 101 or MATH-K 200";
+  }
+if(plevel==4){
+    document.getElementById("class").innerHTML = "MATH-M 118 or MATH-M 119 or MATH-M 125 or MATH-M 126 or MATH-M 127";
+  }
+if(plevel==5){
+    document.getElementById("class").innerHTML = "MATH-M 215";
+  }
+    
+   }
+else {window.history.back();}        
+        
+    
+</script>
+    
+
+ 
+</body>
+</html>
